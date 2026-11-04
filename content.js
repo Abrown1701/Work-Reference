@@ -16,9 +16,10 @@ var SITE = {
   throughline:
     "Every role earned more trust and more ownership: from caring for people, to protecting accuracy, to supporting the C-suite, to running operations.",
 
+  /* Contact. "button: true" shows it as a button instead of a text link. */
   contact: [
-    { label: "Email", text: "[your email]", href: "" },
-    { label: "LinkedIn", text: "[your LinkedIn link]", href: "" }
+    { label: "Email", text: "angelavictoria1701@gmail.com", href: "mailto:angelavictoria1701@gmail.com" },
+    { label: "LinkedIn", text: "Connect on LinkedIn", href: "https://www.linkedin.com/in/angela-brown-73966a1b4/", button: true }
   ],
 
   /* The five roadmap steps, oldest to newest. */

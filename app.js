@@ -168,6 +168,14 @@
   }
 
   S.contact.forEach(function (c) {
+    if (c.button && c.href) {
+      var btn = make("a", "contact-btn", c.text);
+      btn.href = c.href;
+      btn.target = "_blank";
+      btn.rel = "noopener";
+      $("contact").appendChild(btn);
+      return;
+    }
     var span = make("span");
     span.appendChild(make("b", "", c.label + ": "));
     if (c.href) {

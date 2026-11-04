@@ -298,7 +298,21 @@ h1 {
   font-size: 14px;
 }
 .contact b { color: var(--text); }
+.contact {
+  align-items: center;
+}
 .contact a { color: var(--accent); font-weight: 700; }
+.contact a.contact-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.contact a.contact-btn:hover { background: var(--text); }
 
 /* ---------- Phone layout ---------- */
 @media (max-width: 800px) {
