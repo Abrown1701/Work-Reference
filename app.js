@@ -73,7 +73,7 @@
 
     var head = make("div", "card-head");
     var titleWrap = make("div");
-    titleWrap.appendChild(make("span", "step-num", "Step " + s.id + (s.current ? " (Current Role)" : "")));
+    titleWrap.appendChild(make("span", "step-num", "Step " + s.id + (s.current ? " · Current Role" : "")));
     titleWrap.appendChild(make("h3", "", s.role));
     head.appendChild(titleWrap);
 
@@ -110,6 +110,10 @@
     });
     story.appendChild(dl);
     card.appendChild(story);
+
+    if (s.note) {
+      card.appendChild(make("p", "final-note", s.note));
+    }
 
     box.appendChild(card);
   }
@@ -168,24 +172,16 @@
   }
 
   S.contact.forEach(function (c) {
-    if (c.button && c.href) {
-      var btn = make("a", "contact-btn", c.text);
-      btn.href = c.href;
-      btn.target = "_blank";
-      btn.rel = "noopener";
-      $("contact").appendChild(btn);
-      return;
+    var wrap = make("div", "contact-item");
+    var link = make("a", "contact-btn", c.button);
+    link.href = c.href;
+    if (c.href.indexOf("http") === 0) {
+      link.target = "_blank";
+      link.rel = "noopener";
     }
-    var span = make("span");
-    span.appendChild(make("b", "", c.label + ": "));
-    if (c.href) {
-      var a = make("a", "", c.text);
-      a.href = c.href;
-      span.appendChild(a);
-    } else {
-      span.appendChild(document.createTextNode(c.text));
-    }
-    $("contact").appendChild(span);
+    wrap.appendChild(link);
+    if (c.note) wrap.appendChild(make("span", "contact-note", c.note));
+    $("contact").appendChild(wrap);
   });
 
   /* ---------- Start ---------- */
