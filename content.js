@@ -16,10 +16,10 @@ var SITE = {
   throughline:
     "Every role earned more trust and more ownership: from caring for people, to protecting accuracy, to supporting the C-suite, to running operations.",
 
-  /* Contact. "button: true" shows it as a button instead of a text link. */
+  /* Contact buttons shown at the top of the page. "note" is small text under or beside the button. */
   contact: [
-    { label: "Email", text: "angelavictoria1701@gmail.com", href: "mailto:angelavictoria1701@gmail.com" },
-    { label: "LinkedIn", text: "Connect on LinkedIn", href: "https://www.linkedin.com/in/angela-brown-73966a1b4/", button: true }
+    { button: "Email me", href: "mailto:angelavictoria1701@gmail.com", note: "" },
+    { button: "Let's connect on LinkedIn", href: "https://www.linkedin.com/in/angela-brown-73966a1b4/", note: "" }
   ],
 
   /* The five roadmap steps, oldest to newest. */
@@ -38,7 +38,7 @@ var SITE = {
         "Read what a person needs before acting",
         "Sometimes being present matters most"
       ],
-      proof: "[e.g. front desk volume, patients handled per day]",
+      proof: "Trusted by clients in emotional moments, and the person my team turned to for calm, clear communication.",
       story: {
         situation: "A client's dog had beaten cancer into remission and they had a couple of good years. Then he declined fast and needed to be put down. It was my first truly hard loss.",
         action: "I sat down with her, held her hands, and told her what an amazing life she gave her pup and that she did everything she could.",
@@ -59,7 +59,7 @@ var SITE = {
         "Explain complex problems in plain language",
         "Coordinate with insurers to resolve issues"
       ],
-      proof: "[e.g. claims volume, error rate, collections]",
+      proof: "Known for accuracy with money and compliance, and for catching problems before they ever reach the client.",
       story: {
         situation: "A client's bill was submitted to her insurance incorrectly, and she was being charged an exorbitant copay.",
         action: "I walked her through the mistake and my plan to fix it, brought her insurance on the line to explain the problem, and got the codes corrected.",
@@ -101,7 +101,7 @@ var SITE = {
         "Take ownership so leaders can focus on growth",
         "Anticipate needs before they are asked"
       ],
-      proof: "[e.g. hours saved weekly, meetings or travel managed]",
+      proof: "Trusted with a CEO's priorities, calendar, and communications during a high-stakes stretch of growth.",
       story: {
         situation: "I stepped into this role while recovering from a serious car accident. The CEO builds while he flies, so the job was high stakes from day one.",
         action: "I took on immediate trust and a fast handoff of control so he could stop carrying the day-to-day.",
@@ -123,12 +123,13 @@ var SITE = {
         "Focus effort on what moves the business forward",
         "Build plans that serve many stakeholders"
       ],
-      proof: "Supporting hundreds of employees. [add processes built or another number]",
+      proof: "Trusted to own operations and client relationships end to end, balancing competing needs across teams.",
       story: {
         situation: "Our business supports hundreds of employees, each with real concerns and competing needs.",
         action: "I sort out which concerns actually drive the business forward and build plans that balance competing requirements across teams.",
-        result: "It has sharpened my ability to discern and prioritize. [add a specific outcome if you have one]"
-      }
+        result: "It has sharpened my ability to discern what matters most and prioritize with confidence across teams."
+      },
+      note: "I was brought on at SPS specifically for my AI expertise. I built that expertise while working under the CEO at Precision.co, and I strengthened it through multiple AI development courses I took while planning my career."
     }
   ],
 
