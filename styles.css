@@ -418,3 +418,9 @@ h1 {
   .top-left { padding-right: 440px; }
   .contact { position: absolute; top: 32px; right: 36px; margin: 0; flex-wrap: nowrap; }
 }
+
+/* ---------- Phone: contact buttons left aligned, under the name ---------- */
+@media (max-width: 800px) {
+  .contact { width: 100%; margin: 14px 0 0; justify-content: flex-start; flex-wrap: wrap; }
+  .chips { margin-top: 12px; }
+}
