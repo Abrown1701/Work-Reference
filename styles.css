@@ -332,3 +332,27 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .step-btn { transition: none; }
 }
+
+/* ---------- Wide screens: fit everything on one screen ---------- */
+@media (min-width: 1000px) {
+  .page {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    column-gap: 40px;
+    row-gap: 18px;
+    align-content: start;
+    min-height: 100vh;
+    padding: 28px 40px;
+  }
+  .top { grid-column: 1; grid-row: 1; flex-direction: column; align-items: flex-start; }
+  .chips { align-items: flex-start; }
+  .page > section:not(.strengths) { grid-column: 2; grid-row: 1 / span 4; }
+  .section-title { margin-top: 0; }
+  .strengths { grid-column: 1; grid-row: 2; }
+  .banner { grid-column: 1; grid-row: 3; margin-top: 0; }
+  .contact { grid-column: 1; grid-row: 4; margin-top: 0; }
+  .strength-text { margin-top: 10px; }
+  .roadmap li { padding-top: 30px; }
+  .detail { margin-top: 16px; }
+}
